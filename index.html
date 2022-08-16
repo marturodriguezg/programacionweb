@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Six Fitness</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div> 
         <nav class="menu">
             <img src= "./asset/img/logo_UR6.png" alt="Logo UR6" height="" width=""> 
             <!-- en alt ponemos la legenda a visualizar en caso de que no cargue la foto-->
-            <ul>    <!--lista desordenada, no es importante el orden como en un procedimeinto -->
-              <li><a href="https://www.urbansix.com.ar/" target="_blank"> Asociate!</a></li>   <!-- etiqueta a es para introducir algun link-->
-              <li><a href="#">Sedes</a></li>   <!-- href, referencia a un hipervinculo-->
-              <li><a href= "#">Franquicias</a></li>
-              <li><a href="#">Reservá tu clase</a></li> <!-- la etiqueta li, hace ref a cada linea de una lista-->
+            <div class="manuButtom"></div>
+                <ul>    <!--lista desordenada, no es importante el orden como en un procedimeinto -->
+                   <li><a id="asociate" href="https://www.urbansix.com.ar/" target="_blank"> Asociate!</a></li>   <!-- etiqueta a es para introducir algun link-->
+                   <li><a href="#">Sedes</a></li>   <!-- href, referencia a un hipervinculo-->
+                   <li><a href= "#">Franquicias</a></li>
+                   <li><a href="#">Reservá tu clase</a></li> <!-- la etiqueta li, hace ref a cada linea de una lista-->
               
-            </ul>
-          </nav>  <!-- etiqueta de navegacion -->
+                </ul>
+            </div>
+        </nav>  <!-- etiqueta de navegacion -->
     </div>
     <!-- dif entre clase y id, el id es un identificador único. En cambio la clase se puede usar repetidas veces-->
     <section id="main"> <!-- esta será mi sección principal-->
@@ -42,7 +45,7 @@
 
         </div>
     </section> <!-- es para separar bloques de código-->
-    <section>
+    <section id="inscribite">
         <h1>¿ES TU PRIMERA VEZ ENTRENANDO EN SERIO?</h1>
         <p>NOSOTROS TE AYUDAMOS A LOGRARLO</p>
         <h2>CONGELÁ TU CUOTA</h2>
@@ -53,7 +56,7 @@
             EMPEZÁ HOY
         </button>
     </section>
-    <section>
+    <section id="fotos">
         <h2> CONCEPTOS</h2>
         <h1>WORKOUT</h1>
      </section>
@@ -97,7 +100,7 @@
         CLASE DE PRUEBA
         </button>
      </div>
-     <section> 
+     <section id="sedes"> 
         <h1>NUESTROS CLUBES</h1>
         <h3>PALERMO H.</h3>
         <h4>Humboldt 1981,<br>CABA</h4>

@@ -1,0 +1,54 @@
+/* el asterico es para que le aplique a todo el doc*/
+body{
+    margin: 0px;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    margin-left: 40px;
+    list-style: none; /*para sacar el puntito de las listas*/
+}
+nav a{
+    text-decoration: none; /*le saque el subrayado de las listas*/
+    color: white;
+}
+nav a:hover{
+    color: beige;
+}
+#asociate{
+    color: red;
+}
+#asociate a:hover{
+    color: brown;
+}
+nav img{
+    display: flex;
+    width: auto;
+    height: 5vw;
+}
+.menuButtom{
+    display: flex;
+    /* background-color: blueviolet; */
+    /* align-items: center; */
+    align-items: center; /* es para que me queden en el centro, flex-end quedan abajo, flex-start quedan arriba */
+    justify-content: center;
+    width: 100%;
+}
+
+#main{
+    background-color: grey;
+}
+#inscribite{
+    background-color: white;
+}
+#sedes{
+    background-color: grey
+}
