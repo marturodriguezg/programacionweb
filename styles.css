@@ -26,7 +26,7 @@ nav a:hover{
     color: beige;
 }
 #asociate{
-    color: red;
+    color: brown;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     align-items:center;
 }
@@ -57,4 +57,9 @@ nav img{
 }
 #sedes{
     background-color: grey
+}
+
+.carousel-inner img{
+    height: 564px;
+    width: 3cm;
 }

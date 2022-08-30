@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Six Fitness</title>
     <link rel="stylesheet" href="./styles.css">
+    <!-- link para que funcione css-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- link para que funcione JavaScript Bundle with Popper-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
+    
     <div> 
         <nav class="menu">
             <img src= "./asset/img/logo_UR6.png" alt="Logo UR6" height="" width=""> 
             <!-- en alt ponemos la legenda a visualizar en caso de que no cargue la foto-->
             <div class="manuButtom"></div>
                 <ul>    <!--lista desordenada, no es importante el orden como en un procedimeinto -->
-                   <li><a id="asociate" href="https://www.urbansix.com.ar/" target="_blank"> Asociate!</a></li>   <!-- etiqueta a es para introducir algun link-->
+                   <li><a id="asociate" href="./Asociate!.html" target="_blank"> Asociate!</a></li>   <!-- etiqueta a es para introducir algun link-->
                    <li><a href="#">SEDES</a></li>   <!-- href, referencia a un hipervinculo-->
                    <li><a href= "#">FRANQUICIAS</a></li>
-                   <li><a href="#">RESERVÁ TU CLASE</a></li> <!-- la etiqueta li, hace ref a cada linea de una lista-->
+                   <li><a href="./reservatuclase.html" target="_blank">RESERVÁ TU CLASE</a></li> <!-- la etiqueta li, hace ref a cada linea de una lista-->
               
                 </ul>
             </div>
@@ -27,13 +31,10 @@
     <!-- dif entre clase y id, el id es un identificador único. En cambio la clase se puede usar repetidas veces-->
     <section id="main"> <!-- esta será mi sección principal-->
         <div>
-            <h1>ENTRENAMOS EN SERIO</h1>
+            <h1 class="fw-bold" >ENTRENAMOS EN SERIO</h1>
             <p>Una manera diferente de entrenar donde combinamos ejercicios de trabajo muscular con máquinas<br>cardiovasculares y elementos específicos.</p>
             <br>
-            <button
-                id="btnPp1">
-                ASOCIATE
-            </button>
+            <button type="button" class="btn btn-light btn-lg" id="btnPp1" href="./Asociate!.html">ASOCIATE</button>
             <br>
             <video
                 src="./asset/img/videos/Urban Six - Campaña Publicitaria.mp4"
@@ -49,20 +50,78 @@
     <section id="inscribite">
         <h1>¿ES TU PRIMERA VEZ ENTRENANDO EN SERIO?</h1>
         <p>NOSOTROS TE AYUDAMOS A LOGRARLO</p>
-        <h2>CONGELÁ TU CUOTA</h2>
-        <p>Asociate durante agosto y pagás la misma cuota hasta fin de año.</p>
-        <h1>¡ÚLTIMA CHANCE!</h1>
-        <button
-            id="btnPp2">
-            EMPEZÁ HOY
-        </button>
+        <div class="card text-end" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title">CONGELÁ TU CUOTA</h3>
+              <p class="card-text">Asociate durante Septiembre y pagás la misma cuota hasta fin de año.</p>
+              <h5>¡ÚLTIMA CHANCE!</h5>
+              <button type="button" class="btn btn-outline-dark"  class="btn btn-secondary btn-lg" id="btnPp2">EMPEZÁ HOY</button>
+            </div>
+          </div>
+        
     </section>
     <section id="fotos">
         <h2> CONCEPTOS</h2>
         <h1>WORKOUT</h1>
      </section>
+
+     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./asset/img/hiit_UR6.png" class="d-block w-100" class="img-fluid"  alt="Imagen hiit">
+            <h1>HIIT</h1>
+            <button
+            id="btnPp3">
+            CLASE DE PRUEBA
+            </button>
+          </div>
+          <div class="carousel-item">
+            <img src="./asset/img/rumble_UR6.png" class="d-block w-100" class="img-fluid"  alt="Imagen rumble">
+            <h1>RUMBLE</h1>
+            <button
+            id="btnPp4">
+            CLASE DE PRUEBA
+            </button>
+          </div>
+          <div class="carousel-item">
+            <img src="./asset/img/ride_UR6.png" class="d-block w-100" class="img-fluid" alt="Imagen ride">
+            <h1>RIDE</h1>
+            <button
+            id="btnPp5">
+            CLASE DE PRUEBA
+            </button>
+          </div>
+          <div class="carousel-item">
+            <img src="./asset/img/cross_UR6.png" class="d-block w-100" class="img-fluid" alt="Imagen cross">
+            <h1>CROSS</h1>
+            <button
+            id="btnPp6">
+            CLASE DE PRUEBA
+            </button>
+          </div>
+          <div class="carousel-item">
+            <img src="./asset/img/force_UR6.png" class="d-block w-100" class="img-fluid" alt="Imagen force">
+            <h1>FORCE</h1>
+            <button
+            id="btnPp7">
+            CLASE DE PRUEBA
+            </button>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+<!-- 
      <div>
-        <img src="./asset/img/hiit_UR6.png" alt="Imagen hiit" height="450px" width="264px">
+        <img src="./asset/img/hiit_UR6.png" class="d-block w-100  alt="Imagen hiit" height="450px" width="264px">
         <h1>HIIT</h1>
         <button
         id="btnPp3">
@@ -70,7 +129,7 @@
         </button>
      </div>
      <div>
-        <img src="./asset/img/rumble_UR6.png" alt="Imagen rumble" height="450px" width="264px">
+        <img src="./asset/img/rumble_UR6.png" class="d-block w-100  alt="Imagen rumble" height="450px" width="264px">
         <h1>RUMBLE</h1>
         <button
         id="btnPp4">
@@ -78,7 +137,7 @@
         </button>
      </div>
      <div>
-        <img src="./asset/img/ride_UR6.png" alt="Imagen ride" height="450px" width="264px">
+        <img src="./asset/img/ride_UR6.png" class="d-block w-100 alt="Imagen ride" height="450px" width="264px">
         <h1>RIDE</h1>
         <button
         id="btnPp5">
@@ -86,7 +145,7 @@
         </button>
      </div>
      <div>
-        <img src="./asset/img/cross_UR6.png" alt="Imagen cross" height="450px" width="264px">
+        <img src="./asset/img/cross_UR6.png" class="d-block w-100 alt="Imagen cross" height="450px" width="264px">
         <h1>CROSS</h1>
         <button
         id="btnPp6">
@@ -94,13 +153,15 @@
         </button>
      </div>
      <div>
-        <img src="./asset/img/force_UR6.png" alt="Imagen force" height="450px" width="264px">
+        <img src="./asset/img/force_UR6.png" class="d-block w-100 alt="Imagen force" height="450px" width="264px">
         <h1>FORCE</h1>
         <button
         id="btnPp7">
         CLASE DE PRUEBA
         </button>
      </div>
+-->
+
      <section id="sedes"> 
         <h1>NUESTROS CLUBES</h1>
         <h3>PALERMO H.</h3>
