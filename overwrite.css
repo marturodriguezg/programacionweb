@@ -1,0 +1,7 @@
+#carouselExampleControls .carousel-item{
+    height: 200px !important; 
+    background-repeat: no-repeat !important; 
+    background-size: cover; 
+    background-position: center;
+
+}

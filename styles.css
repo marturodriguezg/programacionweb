@@ -26,8 +26,8 @@ nav a:hover{
     color: beige;
 }
 #asociate{
-    color: brown;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ED174B;
+    font-family: 'Alatsi', Sans-serif;
     align-items:center;
 }
 #asociate a:hover{
@@ -46,7 +46,16 @@ nav img{
     justify-content: center;
     width: 100%;
 }
-
+#inscribite h1{
+    color: #000000;
+    font-family: "Alatsi", Sans-serif;
+    font-size: 87px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2em;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+}
 #main{
     background-color: grey;
     color: white;
@@ -56,10 +65,32 @@ nav img{
     background-color: white;
 }
 #sedes{
-    background-color: grey
+    background-color: #17181C;  
+}
+#sedes h1{
+    color: #ED174B;
+}
+#sedes h3{
+    color: white;
+    font-family: 'Alatsi', Sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    size: 20px;
+    line-height: 22px;
+}
+#sedes h4{
+    color: #3D3F46;
 }
 
 .carousel-inner img{
     height: 564px;
     width: 3cm;
 }
+
+#fotos h2{
+    color: #ED174B;
+}
+/*con # llamo a los ids, con . llamo a las clases*/
+
+
+
